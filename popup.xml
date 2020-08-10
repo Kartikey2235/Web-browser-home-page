@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/websiteTextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter website details"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            
+            <EditText
+                android:id="@+id/websiteName"
+                android:hint="Enter website name"
+                android:layout_below="@+id/websiteTextview"
+                android:textColorHint="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/websiteLink"
+                android:hint="Copy website Link"
+                android:layout_below="@+id/websiteName"
+                android:textColorHint="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:background="@android:color/holo_purple"
+                android:layout_below="@id/websiteLink" />
+
+        </RelativeLayout>>
+        
+    </androidx.cardview.widget.CardView>>
+</LinearLayout>
